@@ -5,14 +5,11 @@ import { PhantomWalletAdapter } from '@solana/wallet-adapter-wallets';
 import { WalletModalProvider, WalletMultiButton } from '@solana/wallet-adapter-react-ui';
 import { clusterApiUrl } from '@solana/web3.js';
 import EscrowUI from './components/EscrowUI';
-
 import '@solana/wallet-adapter-react-ui/styles.css';
 
 function App() {
   const network = WalletAdapterNetwork.Devnet;
-
   const endpoint = useMemo(() => clusterApiUrl(network), [network]);
-
   const wallets = useMemo(
     () => [
       new PhantomWalletAdapter(),
