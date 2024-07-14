@@ -21,9 +21,11 @@
     "@solana/web3.js": "^1.95.0",
     "@vitejs/plugin-react-swc": "^3.7.0",
     "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
     "process": "^0.11.10",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "vite-plugin-node-polyfills": "^0.22.0"
   },
   "devDependencies": {
     "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
