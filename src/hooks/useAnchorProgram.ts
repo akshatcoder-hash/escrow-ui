@@ -1,6 +1,6 @@
 import { useConnection, useAnchorWallet } from '@solana/wallet-adapter-react';
 import { AnchorProvider, Program, Idl } from '@project-serum/anchor';
-import { Connection, PublicKey } from '@solana/web3.js';
+import { Connection } from '@solana/web3.js';
 import { useMemo } from 'react';
 import { PROGRAM_ID } from '../utils/constants';
 import idl from '../idl/anchor_escrow.json';

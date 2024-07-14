@@ -1,4 +1,4 @@
-import { Program, AnchorProvider, web3, utils, BN } from '@project-serum/anchor';
+import { Program, AnchorProvider, web3, BN } from '@project-serum/anchor';
 import { PublicKey, Connection } from '@solana/web3.js';
 import { PROGRAM_ID } from './constants';
 import idl from '../idl/anchor_escrow.json';
