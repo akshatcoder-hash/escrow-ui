@@ -1,30 +1,89 @@
-# React + TypeScript + Vite
+# Anchor Escrow UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+Anchor Escrow UI is a React-based frontend application for interacting with the Anchor Escrow smart contract on the Solana blockchain. This project provides a user-friendly interface for creating, managing, and interacting with escrow agreements.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Connect to Solana wallets
+- Create new escrow agreements
+- Refund escrow agreements
+- Take (complete) escrow agreements
+- View active escrows
+- Real-time balance updates
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Prerequisites
 
-- Configure the top-level `parserOptions` property like this:
+- Node.js (v14 or later)
+- Yarn or npm
+- A Solana wallet (e.g., Phantom, Solflare)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/akshatcoder-hash/anchor-escrow-ui.git
+   cd anchor-escrow-ui
+   ```
+
+2. Install dependencies:
+   ```
+   yarn install
+   ```
+   or
+   ```
+   npm install
+   ```
+
+3. Create a `.env` file in the root directory and add your Solana network configuration:
+   ```
+   VITE_SOLANA_NETWORK=devnet
+   VITE_RPC_ENDPOINT=https://api.devnet.solana.com
+   ```
+
+## Running the Application
+
+To start the development server:
+
+```
+yarn dev
+```
+or
+```
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+The application will be available at `http://localhost:5173`.
+
+## Building for Production
+
+To create a production build:
+
+```
+yarn build
+```
+or
+```
+npm run build
+```
+
+## Testing
+
+To run the test suite:
+
+```
+yarn test
+```
+or
+```
+npm test
+```
+
+## Contributing
+
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for more details.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
